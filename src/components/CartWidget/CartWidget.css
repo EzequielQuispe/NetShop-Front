@@ -1,3 +1,9 @@
 .imgCart {
-    width: 4rem;
+    width: 2rem;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
