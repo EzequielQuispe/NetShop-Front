@@ -11,9 +11,12 @@ header {
     background: #bdc8ff;
 }
 
-li {
+.item {
     display: inline-block;
     margin: 1rem;
     cursor: pointer;
-    
+}
+
+.logo {
+    width: 10%;
 }

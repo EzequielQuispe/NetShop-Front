@@ -8,6 +8,10 @@
     align-items: center;
 }
 
-img {
+.imagen {
     width: 50vw;
+}
+
+.detalle {
+    font-weight: bold;
 }
