@@ -5,25 +5,25 @@ import { db } from '../../services/firebase/config'
 import { getDoc, doc } from 'firebase/firestore'
 
 export const ItemDetailContainer = () => {
-    const [producto, setProducto] = useState(null);
+    const [product, setProduct] = useState(null);
 
     const { idItem } = useParams();
 
     useEffect(() => {
-        const nuevoDoc = doc(db, "productos", idItem);
+        const newDoc = doc(db, "products", idItem);
 
-        getDoc(nuevoDoc)
+        getDoc(newDoc)
             .then(res => {
                 const data = res.data();
-                const nuevoProducto = { id: res.id, ...data };
-                setProducto(nuevoProducto);
+                const newProduct = { id: res.id, ...data };
+                setProduct(newProduct);
             })
             .catch(error => console.log(error))
     }, [idItem])
 
     return (
         <div>
-            <ItemDetail {...producto} />
+            <ItemDetail {...product} />
         </div>
     )
 }

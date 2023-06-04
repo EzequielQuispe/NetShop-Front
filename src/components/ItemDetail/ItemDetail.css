@@ -1,17 +1,8 @@
 .contenedorItem {
     text-align: center;
-    border: 1px solid #e3e1e1;
     margin: 3rem;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.imagen {
-    width: 50vw;
-}
-
-.detalle {
-    font-weight: bold;
 }
